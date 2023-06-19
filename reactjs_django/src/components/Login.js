@@ -40,8 +40,8 @@ function Login() {
   };
 
   return (
-    <div className="container-fluid">
-      <h2 className="text-center alert alert-success mt-2">Login Page</h2>
+    <div className="container-fluid p-0">
+      <h2 className="text-center alert alert-success mt-0">Login Page</h2>
       <div className="row">
         <div className="col-md-4 mx-auto">
           <form action='/'>

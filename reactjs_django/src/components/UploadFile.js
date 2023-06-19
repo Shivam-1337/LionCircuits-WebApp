@@ -108,12 +108,12 @@ function UploadFile() {
         console.log(files)
     }, [])
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             {isAuthenticated ? (
-                <div className="container-fluid">
+                <div className='container-fluid p-0'>
                     <Navigation />
                     <br />
-                    <div className="row">
+                    <div className="container-fluid row" style={{paddingRight:0}}>
                         <div className="col-md-4">
                             <h2 className="alert alert-success">File Upload Section</h2>
                             <form>
@@ -165,8 +165,8 @@ function UploadFile() {
                 </div>                
                 
             ) : (
-                <div className='container-fluid'>
-                    <h2 className="text-center alert alert-danger mt-2">User not authenticated, Please Login First</h2>
+                <div className='container-fluid p-0'>
+                    <h2 className="text-center alert alert-danger mt-0">User not authenticated, Please Login First</h2>
                     <Login />
                 </div>
             )}

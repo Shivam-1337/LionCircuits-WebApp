@@ -78,13 +78,13 @@ const UserProfilePage = ({}) => {
     };
 
     return (
-        <div className="container-fluid">
+        <div className="container-fluid p-0">
             {isAuthenticated ? (
                 <div>
                     <Navigation />
-                    <h2 className="text-center alert alert-success mt-2">User Profile Page</h2>
-                    <div className="row">
-                        <div className="col-md-4 mx-auto">
+                    <h2 className="text-center alert alert-success mt-0">User Profile Page</h2>
+                    <div className="row-12">
+                        <div className="col-4 mx-auto">
                             <form action='/'>
                                 <div className="form-group">
                                     <label htmlFor="password" className="float-left">
